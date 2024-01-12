@@ -1,0 +1,127 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link href="https://fonts.cdnfonts.com/css/chalkduster" rel="stylesheet">
+<style>
+    @import url('https://fonts.cdnfonts.com/css/chalkduster');
+</style>
+<script src="./teaser-data.js"></script>
+
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Segmenting Cellular
+        Motifs to Decipher Tumor Phenotype Using Multimodal
+        Imaging Data</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description"
+        content="Project page for &#39;Image Translation as Diffusion Visual Programmers.&#39;">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Segmenting Cellular
+        Motifs to Decipher Tumor Phenotype Using Multimodal
+        Imaging Data</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="description"
+        content="Project page for &#39;Image Translation as Diffusion Visual Programmers.&#39;">
+</head>
+
+<body>
+    <p class="title">Segmenting Cellular
+        Motifs to Decipher Tumor Phenotype <br> Using Multimodal
+        Imaging Data</p>
+
+    <p class="author">Dongfang Liu<sup>1</sup> & Dawei Zhou<sup>2</sup></p>
+    <p class="author"><sup>1</sup> Rochester Institute of Technology</p>
+    <p class="author"><sup>2</sup> Virginia Tech</p>
+    
+
+    <div class="content" style="background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);">
+        <h2>Abstract</h2>
+        <p> The study of cell phenotypes, particularly in cancer cells, is a complex process involving the identification and measurement of unique cellular characteristics within microscopy images. Despite advancements in computer vision, integrating learning-based segmentation into the analysis of cancer cell morphology through multimodal imaging presents significant challenges. This abstract identifies three primary obstacles: (1) Learning inefficiency, where the demand for extensive annotated training data for tumor phenotypes is hampered by high costs and the difficulty in obtaining detailed annotations; (2) Model opacity, which affects the transparency and interpretability of these models, crucial in clinical settings where trust and understanding are paramount; (3) Hierarchical dyslexia in learning-based models, which limits their ability to grasp the complex relationships between cellular entities in multimodal cancer imaging. Addressing these issues requires a novel approach to learning-based segmentation, tailored to the unique complexities of cancer, to fully harness the potential of these technologies for medical diagnostics and research.
+        &nbsp;
+    </div>
+
+    <div class="content" style="background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);">
+        <h2>SegCell Benchmark</h2>
+        &nbsp;
+        <div style="text-align: center">
+            <img src="./figs/segcell.png" alt="" width="850" style="margin: auto" />
+        </div>
+        &nbsp;
+        <p>We endeavor to develop SegCell, the first-of-its-kind benchmark repository for cell segmentation evaluation, distinct in its approach from existing works. Our proposed repository will integrate
+            a comprehensive list of cell segmentation evaluation metrics, including F1-score, average precision metric, AUROC, Number of Cells per 100 Squared Micrometers, Fraction of Image Foreground Occupied
+            by Cells, Fraction of Match between Cells and Nuclei, Average Coefficient of Variation of Foreground Pixels Outside Cells, and others. Moreover, it will provide a leaderboard showcasing state-of-the-art
+            methods in cell segmentation and will be made openly accessible, with a preliminary version alreadyavailable at a specified URL. Utilizing SegCell we will conduct a systematic evaluation of proposed
+            methods, focusing on prediction performance, computation cost (including running time, space cost, and scalability), the tightness of proposed generalization bounds, and parameter sensitivity. We curate
+            a data repository obtained from public datasets, including the HuBMAP project, CODEX, Cell DIVE, MIBI, IMC and MAPs. The segmentation channels for each modality were carefully chosen based on
+            recommendations from Tissue Mapping Centers or peer-reviewed literature, ensuring consistency andaccuracy in evaluation results.</p>
+    </div>
+
+    <div class="content" style="background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);">
+        <h2>In-Context Segmenter As Visual Programmer</h2>
+        &nbsp;
+        <div style="text-align: center">
+            <img src="./figs/cell_vp.jpg" alt="" width="850" style="margin: auto" />
+        </div>
+        &nbsp;
+        <p>For a cellular image, our method employs a hierarchical approach to pixel prototyping segmentation. It starts with broad, coarse-grained labels and progressively refines them into more detailed, fine-grained labels. Throughout each level of granularity, our specialized module assists in identifying prototypes that serve as benchmarks for segmentation. For instance, the representation distinction between malignant and benign cells at the nucleus level is a critical differentiation point. This hierarchical, root-to-leaf structure is pivotal for capturing generic-to-specific relationships. Such a detailed and nuanced approach is particularly crucial in the context of cancer cell segmentation. In these cases, an in-depth and sophisticated understanding of context is necessary, as it requires high semantic precision and a thorough grasp of the image structure. This level of comprehension and structural mastery is notably lacking in current methods.</p>
+    </div>
+
+
+
+</body>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WLX2Z5QLG8');
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script type="text/javascript">
+    $(document).ready(function () {
+
+        if (localStorage.getItem("my_app_name_here-quote-scroll") != null) {
+            $(window).scrollTop(localStorage.getItem("my_app_name_here-quote-scroll"));
+        }
+
+        $(window).on("scroll", function() {
+            localStorage.setItem("my_app_name_here-quote-scroll", $(window).scrollTop());
+        });
+
+      });
+ </script>
+
+ <script>
+    function prompt_on(prompt_element) {
+        prompt_element.classList.add("caption-active");
+    }
+
+    function prompt_off(prompt_element) {
+        prompt_element.classList.remove("caption-active");
+    }
+
+    function toggle_prompt(active_prompt_id, inactive_prompt_ids, result_id) {
+        let active_prompt = document.getElementById(active_prompt_id);
+        prompt_on(active_prompt);
+        for (let i = 0; i < inactive_prompt_ids.length; i++) {
+            let inactive_prompt = document.getElementById(inactive_prompt_ids[i]);
+            prompt_off(inactive_prompt);
+        }
+
+        let result = document.getElementById(result_id);
+        result.src = file_paths[active_prompt_id];
+    }
+ </script>
+
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</html>
